@@ -40,7 +40,7 @@ public final class PlayerEsp {
 		MatrixStack stack = context.matrixStack();
 		if (stack == null) return;
 
-		float delta = context.tickCounter().getTickProgress(false);
+		float delta = context.tickCounter().getTickDelta(false);
 		Camera camera = context.camera();
 		Vec3d cam = camera.getPos();
 
